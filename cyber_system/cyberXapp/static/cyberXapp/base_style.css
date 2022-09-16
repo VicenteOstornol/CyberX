@@ -1,0 +1,127 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --darkblue: #0A1128;
+    --text-input-field: #F7F7F7;
+    --midblue: #001F54;
+    --softblue: #034078;
+    --lightblue: #1282A2;
+    --sm: 20px;
+    --md: 24px;
+    --lg: 28px;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color: var(--softblue);
+}
+
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 8px black;
+    background-color: var(--midblue);
+}
+
+#nav-title {
+    margin-left: 30px;
+    font-size: 1.5em;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-input-field);
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: var(--lightblue);
+}
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--midblue);
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: var(--midblue);
+}
+
+.footer-info h1 {
+    font-size: 26px;
+    color: white;
+    text-shadow: #000000 1px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.footer-info p {
+    color: white;
+    text-align: justify;
+    margin: 20px;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: var(--midblue);
+}
+
+
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--midblue);
+}
+
+.footer-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease 0s;
+}
+
+.footer-links ul li a:hover {
+    color: #28c2b5;
+}
+

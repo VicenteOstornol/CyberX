@@ -1,0 +1,98 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --darkblue: #0A1128;
+    --text-input-field: #F7F7F7;
+    --midblue: #001F54;
+    --softblue: #034078;
+    --lightblue: #1282A2;
+    --sm: 20px;
+    --md: 24px;
+    --lg: 28px;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color: var(--softblue);
+}
+
+
+section {
+    display: grid;
+    place-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    margin-top: 0px;
+    width: 70%;
+    height: 63%;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    background-color: var(--midblue);
+}
+
+.info h1 {
+    font-size: var(--sm);
+    color: var(--text-input-field);
+    text-shadow: #000000 1px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.info p {
+    color: var(--text-input-field);
+    text-align: justify;
+    margin: 20px;
+}
+
+.info .buton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.info button {
+    background-color: var(--softblue);
+    color: white;
+    border: 1px solid var(--lightblue);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+
+}
+
+.info button:hover {
+    color: white;
+    border: 1px solid rgb(12, 44, 194);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.info button a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+
+.foto {
+    width: 40%;
+    height: 100%;
+    background-color: blue;
+
+}
+
+.foto img {
+    width: 100%;
+    height: inherit;
+}

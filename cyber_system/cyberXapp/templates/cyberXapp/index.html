@@ -1,0 +1,31 @@
+{% extends 'base_logged_out.html' %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'cyberXapp/index_style.css' %}">
+{% endblock styles %}
+{% block titulo %}CyberX{% endblock titulo %}
+{% block contenido %}
+<main>
+    <section>
+        <div class="main-container">
+            <div class="info">
+                <h1>CyberX Management</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum molestiae quas beatae aliquam dolores modi quibusdam alias dolorum dicta velit enim iste voluptate impedit, autem doloremque! Doloribus reiciendis voluptas ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laudantium doloremque tempore architecto aperiam debitis iste, sit rerum. Deserunt repudiandae a id beatae assumenda nisi fugit alias provident mollitia reprehenderit! Lorem ipsum dolor, sit amet consectetur ad </p>
+                <div class="buton">
+                    <a href="">
+                        <button>View More About</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="foto">
+                <img src="{% static 'cyberXapp/images/fotomid.jpg' %}" alt="cyber">
+            </div>
+        </div>
+        <h1>We are in under construction!</h1>
+        <p>Shhh… don’t tell anyone.</p>
+    </section>
+
+
+</main>
+{% endblock contenido %}
