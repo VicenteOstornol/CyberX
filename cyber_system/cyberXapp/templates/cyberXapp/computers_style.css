@@ -1,0 +1,97 @@
+
+
+section {
+  display: grid;
+  place-content: center;
+}
+
+section .computer-details-container-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+.computer-details-container-section {
+  top: 120px;
+  margin-top: 3%;
+  left: calc(50% - 528px);
+  border-radius: 31px;
+  background-color: #001f54;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1076px;
+  height: fit-content;
+}
+.table-header-cell {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+}
+.table-cell-div {
+  flex: 1;
+  padding: 16px 20px;
+}
+.property-1table-header-row,
+.table-cell-div,
+.table-cell-label {
+  border: 1px solid #b9b9b9;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.table-cell-label {
+  cursor: pointer;
+  flex: 1;
+  padding: 16px 20px;
+}
+.property-1table-header-row {
+  width: 993px;
+  text-align: left;
+  font-size: 14px;
+  color: #74747b;
+  font-family: Inter;
+}
+.table-cell-div5,
+.table-cell-textarea {
+  border: 1px solid #b9b9b9;
+  flex: 1;
+  position: relative;
+  height: 53px;
+  flex-direction: row;
+  padding: 16px 20px;
+}
+.table-cell-div5 {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.table-cell-textarea {
+  background-color: transparent;
+}
+.property-1table-normal-row,
+.table-cell-textarea,
+.table-row-div {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.property-1table-normal-row {
+  border: 1px solid #b9b9b9;
+  position: relative;
+  width: 993px;
+  flex-direction: row;
+}
+.table-row-div {
+  top: 188px;
+  left: 213px;
+  border-radius: 5px;
+  flex-direction: column;
+  padding: 20px;
+  gap: 16px;
+}

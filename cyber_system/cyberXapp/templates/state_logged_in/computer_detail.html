@@ -1,0 +1,24 @@
+{% extends 'base_logged_in.html' %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'cyberXapp/index_style.css' %}">
+<link rel="stylesheet" href="{% static 'cyberXapp/styles_logged_in/computer_detail_style.css' %}">
+{% endblock styles %}
+{% block titulo %}Computer detail{% endblock titulo %}
+{% block contenido %}
+<section>
+    {% for computer in computers %}
+    <div class="computer">
+        <div class="computer__info">
+            <h2 class="computer__info--name">{{ computer.name }}</h2>
+            <p class="computer__info--ip">{{ computer.ip }}</p>
+        </div>
+        <div class="computer__actions">
+            <a href="{% url 'computer_detail' computer.id %}" class="computer__actions--detail">Detalles</a>
+            <a href="{% url 'computer_edit' computer.id %}" class="computer__actions--edit">Editar</a>
+            <a href="{% url 'computer_delete' computer.id %}" class="computer__actions--delete">Eliminar</a>
+        </div>
+    {% endfor %}
+    <a href="{% url 'add_editComputer' %}">Add, edit computer</a>
+</section>
+{% endblock contenido %}

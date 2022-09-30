@@ -2,12 +2,13 @@
 {% load static %}
 {% block styles %}
 <link rel="stylesheet" href="{% static 'cyberXapp/styles_logged_out/login_style.css' %}">
-<link rel="stylesheet" href="{% static 'cyberXapp/maintenance_style.css' %}">
 {% endblock styles %}
 {% block titulo %}Log In{% endblock titulo %}
 {% block contenido %}
 <section>
-    <h1>We are in under construction!</h1>
-    <p>Shhh… don’t tell anyone.</p>
+    <div class="login-form">
+        <h1>Log In</h1>
+            <a href="{% url 'index_in' %}">login</a>
+    </div>
 </section>
 {% endblock contenido %}

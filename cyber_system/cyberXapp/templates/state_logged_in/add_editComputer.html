@@ -1,1 +1,31 @@
-{{form}}
+{% extends 'base_logged_in.html' %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'cyberXapp/index_style.css' %}">
+<link rel="stylesheet" href="{% static 'cyberXapp/styles_logged_in/add_editComputer_style.css' %}">
+{% endblock styles %}
+{% block titulo %}add edit computer{% endblock titulo %}
+{% block contenido %}
+<section>
+<form enctype="multipart/form-data"  method="POST">
+
+  {% csrf_token %}
+  {% for field_ in form_ %}
+  
+    <div>
+      <label for="">{{ field_.label }}</label> 
+
+      <input 
+      type="{{field_.field.widget.input_type}}" 
+      name="{{ field_.name }}" 
+      aria-describedby="helpId" 
+      placeholder="{{field_.label}}"
+      >
+    </div>
+    <div> {{ field_.errors }} </div>
+  {% endfor %}
+  <input name="" id="" type="submit" value="Enviar informacion">
+
+</form>
+</section>
+{% endblock contenido %}

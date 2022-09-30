@@ -5,26 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'cyberXapp/index_style.css' %}">
+    <link rel="stylesheet" href="{% static 'cyberXapp/base_style.css' %}">
+    {% block styles %}
+    {% endblock styles %}
     <title>{% block titulo %}  {% endblock  %}</title>
 </head>
 <body>
     <header>
-        <h1 id="nav-title"><a href="#">CyberX</a></h1>
+        <h1 id="nav-title"><a href="{% url 'index_in' %}">CyberX</a></h1>
+        <ul>
+            <li><a href="{% url 'index_in' %}">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Customer Management</a></li>
+            <li><a href="{% url 'computer_management' %}">Computer Management</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </header>
+    
+    {% block contenido %}
+    {% endblock contenido%}
+        
+    <footer>
+        <div class="footer-info">
+            <h1>CyberX</h1>
+            <p>© 2021 CyberX. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="{% url 'index_in' %}">Home</a></li>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Customer Management</a></li>
-                <li><a href="#">Computer Management</a></li>
+                <li><a href="{% url 'computer_management' %}">Computer Management</a></li>
                 <li><a href="#">Logout</a></li>
+
             </ul>
-     </header>
-     <main>
-        <div class="main-container">
-            {% block contenido %}  {% endblock contenido %}
         </div>
-    </main>
-
-
-</body>
+    </footer>
+    </body>
 </html>
+        
+        
+
+
+
+
+
+
+
+
+
